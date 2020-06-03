@@ -6,7 +6,7 @@ App description:-
 In this App two folders are available
 For starting this app you can run two scripts which are following:-
 
-## 1.Backend
+## 1.server
   
 ## Available Scripts
   In the project directory, you can run:
