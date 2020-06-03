@@ -6,14 +6,15 @@ App description:-
 In this App two folders are available
 For starting this app you can run two scripts which are following:-
 
-1.Backend
+## 1.Backend
   
 ## Available Scripts
   In the project directory, you can run:
 
 ### `npm start`
 
-2. Client
+## 2. Client
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
