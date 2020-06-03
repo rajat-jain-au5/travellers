@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body{
+  overflow-x: hidden;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navbar-color{
+  background-color:#2D4DA4;
+}
+
+
+ .overlay {
+   width: 100%;
+  transition: .5s ease;
+  opacity:20;
+  font-size: 20px;
+  padding: 10px;
+ 
+}
+.overlay1 {
+   background:#2D4DA4;
+   width: 100%;
+   transition: .5s ease;
+   opacity:20;
+  font-size: 20px;
+ 
+}
+.search{
+  height:30vh;
+  margin-bottom: 30px;
+  background-image: linear-gradient(to right, rgba(161, 150, 223, 0.6), rgba(166, 208, 245, 0.6)), url('./image/7.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat, no-repeat;
+display: flex;
+justify-content: center;
+}
+
+
+.search-form{
+  display: flex;
+  align-items: center;
+}
+
+.desc p{
+  font-weight: 600;
+}
+
+
+.cart-item{
+  font-size: 30px;
+}
+.cart{
+  color: white
+}
+.cart:hover{
+ text-decoration: none;
+  color: white
+}
+
+.activity{
+ margin-bottom: 30px;
+ /* border:1px solid black; */
+border-width: medium;
+text-align: center;
+height: 50px;
+background-color:#F8D7DA;
+font-size: x-large;
+}
