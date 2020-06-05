@@ -49,12 +49,7 @@ export function searchHotel(search) {
   };
 }
 
-// function searchdata(data) {
-//   return {
-//     type: "SEARCH_HOTEL",
-//     payload: data,
-//   };
-// }
+
 
 //Addcart api
 export function addCart(data) {
@@ -78,12 +73,7 @@ export function addCart(data) {
   };
 }
 
-// function addcart(data) {
-//   return {
-//     type: "ADD_CART",
-//     payload: data,
-//   };
-// }
+
 
 // Get cart api
 export function getCarts() {
@@ -105,12 +95,6 @@ export function getCarts() {
       });
   };
 }
-// function getcart(data) {
-//   return {
-//     type: "GET_ALL_CART",
-//     payload: data
-//   };
-// }
 
 
 // Delete Cart api
@@ -134,12 +118,7 @@ export function deleteFromCart(id) {
       });
   };
 }
-// function deleteCartItem(data) {
-//   return {
-//     type: "DELETE_CART_ITEM",
-//     payload: data.data,
-//   };
-// }
+
 
 // Add order api
 export function addOrder(items){
@@ -162,12 +141,7 @@ export function addOrder(items){
   };
 }
 
-// function orders(data) {
-//   return {
-//     type: "ADD_ORDER",
-//     payload: data,
-//   };
-// }
+
 
 
 // Get all orders
@@ -191,12 +165,7 @@ export function getAllOrder(){
       });
   };
 }
-// function getOrder(data){
-//   return{
-//     type:"GET_ORDER",
-//     payload:data
-//   }
-// }
+
 
 export function getActivity(){
    return function (dispatch) {

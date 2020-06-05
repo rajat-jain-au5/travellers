@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { getAllHotels, searchHotel,addCart } from "../actionCreators/hotelAction";
 import Navbar from "./Navbar";
-import { Redirect } from "react-router-dom";
+import { Redirect, withRouter } from "react-router-dom";
 
 
 class Dashboard extends Component {
@@ -27,14 +27,14 @@ class Dashboard extends Component {
               fromDate:"",
               toDate:""
         })
+        this.props.history.push('searchresults')
   }
   render() {
-    if (this.props.hotel.redirect === true) {
-      return <Redirect to="/searchresults" />;
-    }
-     if (this.props.hotel.cartAdd === true) {
+  
+    if (this.props.hotel.cartAdd === true) {
        return <Redirect to="/cart" />;
      }
+     
     var settings = {
       dots: false,
       infinite: true,
@@ -227,4 +227,4 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({ getAllHotels, searchHotel,addCart }, dispatch);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter( Dashboard));

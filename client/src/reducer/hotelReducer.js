@@ -22,6 +22,7 @@ export default function (state = intialState, action) {
       return stateCopy;
     case "ADD_CART":
       stateCopy.cartAdd = true;
+      stateCopy.redirect=false
       return stateCopy;
     case "GET_ALL_CART":
       stateCopy.addCart = action.payload;

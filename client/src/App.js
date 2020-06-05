@@ -22,7 +22,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Protected path="/dashboard" exact component={Dashboard} />
-            <Protected path="/searchresults" exact component={searchResults}/>
+            <Route path="/searchresults" exact component={searchResults}/>
             <Protected path="/cart" exact component={Cart}/> 
             <Protected path ="/order" exact component={Order}/>
             <Protected path="/activity" exact component={Activity}/>

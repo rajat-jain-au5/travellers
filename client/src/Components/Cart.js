@@ -36,40 +36,45 @@ class Cart extends Component {
             <div class="card-header">My Cart</div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                {this.props.hotel.addCart == ""
-                  ? "Your Cart is empty"
-                  : this.props.hotel.addCart.map((it, index) => {
-                      return (
-                        <div className="container">
-                          <div className="row">
-                            <div key={index} className="col-md-3 rounded">
-                              <img
-                                src={it.imageUrl}
-                                alt=""
-                                width="120px"
-                                height="150px"
-                              />
-                              <br />
-                            </div>
-                            <div className="col-md-9">
-                              <p className="cart-item">
-                                {it.name}
+                {
+                  // eslint-disable-next-line
+                  this.props.hotel.addCart == ""
+                    ? "Your Cart is empty"
+                    : this.props.hotel.addCart.map((it, index) => {
+                        return (
+                          <div className="container">
+                            <div className="row">
+                              <div key={index} className="col-md-3 rounded">
+                                <img
+                                  src={it.imageUrl}
+                                  alt=""
+                                  width="120px"
+                                  height="150px"
+                                />
                                 <br />
-                                <span style={{ fontSize: 20 }}>{it.city}</span>
-                                <br />
-                              </p>
-                              <h6>₹ {it.price}</h6>
-                              <button
-                                onClick={() => this.deleteCart(it._id)}
-                                className="btn btn-md"
-                              >
-                                Remove
-                              </button>
+                              </div>
+                              <div className="col-md-9">
+                                <p className="cart-item">
+                                  {it.name}
+                                  <br />
+                                  <span style={{ fontSize: 20 }}>
+                                    {it.city}
+                                  </span>
+                                  <br />
+                                </p>
+                                <h6>₹ {it.price}</h6>
+                                <button
+                                  onClick={() => this.deleteCart(it._id)}
+                                  className="btn btn-md"
+                                >
+                                  Remove
+                                </button>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      );
-                    })}
+                        );
+                      })
+                }
               </li>
               <li class="list-group-item">
                 <div>
