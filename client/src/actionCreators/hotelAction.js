@@ -23,12 +23,7 @@ export function getAllHotels() {
   };
 }
 
-// function get(data) {
-//   return {
-//     type: "GET_ALL_HOTELS",
-//     payload: data,
-//   };
-// }
+
 
 //Search hotel api
 export function searchHotel(search) {
